@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Menu-->
+    <div class="contenedor-header">
+        <header>
+            <div class="icono"><a href="#"><img src="./imagenes/monogramaOficial.png" alt="Icono David Boo"></a></div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" class="menu" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobreMi" class="menu" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#conocimientos" class="menu" onclick="seleccionar()">MIS CONOCIMIENTOS</a></li>
+                    <li><a href="#curriculum" class="menu" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyectos" class="menu" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" class="menu" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!---------------Inicio---------------->
+
+    <section id="inicio" class="inicio">
+        <div id="contenido-Inicio" class="contenido-Inicio">
+            <div class="contenedor-img">
+                <img src="./imagenes/fotoPortfolio.jpg" alt="">
+            </div>
+            <h1>David Boo</h1>
+            <h2>Desarrollador de aplicaciones multiplataforma</h2>
+        </div>
+    </section>
+
+    <!---------------Sobre mi---------------->
+    <section id="sobreMi" class="sobre-mi">
+
+        <div id="textoSobreMi">
+
+            <p> Soy un desarrollador apasionado por solucionar problemas y aprender constantemente. Aunque acabo de 
+                terminar mis estudios, estoy emocionado de compartir mi experiencia y habilidades hasta ahora.</p>
+
+            <p>En mi enfoque como desarrollador, me encanta explorar las distintas posibilidades que ofrece la
+                tecnología para encontrar soluciones innovadoras. Mediante el desarrollo de aplicaciones
+                multiplataforma, he aprendido a adaptar mis habilidades a diferentes sistemas operativos y dispositivos,
+                lo que me brinda un amplio rango de oportunidades para crear experiencias de usuario memorables.</p>
+
+
+            <div id="restoTexto">
+                <p>A pesar de mi falta de experiencia profesional, he participado en varios proyectos durante mis
+                    estudios y
+                    he demostrado mi capacidad para resolver problemas de manera eficiente y eficaz. Me siento cómodo
+                    trabajando en entornos colaborativos donde puedo aprender de mis compañeros y aportar mis propias
+                    ideas
+                    y perspectivas.</p>
+
+                <p>Mis estudios me han proporcionado una base sólida en los principios de la programación y el diseño de
+                    software. He adquirido habilidades en lenguajes como Java, Python y JavaScript, así como en el
+                    desarrollo de aplicaciones móviles y web. Además, estoy constantemente buscando oportunidades para
+                    expandir mis conocimientos y seguir aprendiendo nuevas tecnologías y técnicas de desarrollo.</p>
+
+                <p>Mi portfolio no solo incluye los proyectos que he realizado durante mis estudios, sino también una
+                    muestra de mi capacidad creativa y mi enfoque en la resolución de problemas. Me encanta la
+                    oportunidad
+                    de enfrentar retos nuevos y emocionantes, y estoy motivado para desarrollar soluciones que puedan
+                    mejorar la vida de las personas.</p>
+
+                <p>Si estás buscando un desarrollador de aplicaciones multiplataforma apasionado y orientado a la
+                    solución
+                    de problemas, estoy emocionado de ser parte de tu equipo. Estoy seguro de que, junto a ustedes,
+                    podemos
+                    crear productos innovadores y de calidad.</p>
+            </div>
+            <p>¡Estoy deseando conocer nuevas oportunidades y enfrentar nuevos desafíos en el mundo del desarrollo!</p>
+
+            <button id="btnSaberMas" class="btn">Quiero saber más</button>
+
+        </div>
+        <div class="fila">
+            <div class="col">
+                <h3>Mis Datos</h3>
+                <ul>
+                    <li><img src="./imagenes/cumpleanos.png"> 05/06/1985 </li>
+                    <li><img src="./imagenes/telefono.png"> 627768714 </li>
+                    <li><img src="./imagenes/email.png"> culoxo@hotmail.com </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Mis Intereses</h3>
+                <ul>
+                    <li><img src="./imagenes/deporte.png"> Deporte</li>
+                    <li><img src="./imagenes/consola.png"> Videojuegos</li>
+                    <li><img src="./imagenes/comiendo.png"> Comida</li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <div class="diseno">
+            <span id="cambioDiseno">¿No te está gustando el diseño que he elegido?No hay problema, te dejo otras opciones</span>
+            <ul>
+                <li><button id="opcion2" class="btn" onclick="cambiodiseno2()">Diseño 2</button></li>
+                <li><button id="opcion3" class="btn" onclick="cambiodiseno3()">Diseño 3</button></li>
+                <li><button id="opcion1" class="btn" onclick="estadoOriginal()">Diseño original</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!---------------Mis conocimientos---------------->
+    <section id="conocimientos" class="misConocimientos">
+        <div class="contenido-misConocimientos">
+            <h2>Mis Conocimientos</h2>
+            <div id="conocimientos">
+                <ul>
+                    <li><img src="./imagenes/html5.png"> </li>
+                    <li><img src="./imagenes/css3.png"> </li>
+                    <li><img src="./imagenes/java.png"> </li>
+                    <li><img src="./imagenes/js.png"> </li>
+                    <li><img src="./imagenes/angular.png"> </li>
+                    <li><img src="./imagenes/python.png"> </li>
+                    <li><img src="./imagenes/django.png"> </li>
+                    <li><img src="./imagenes/wordpress.png"> </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!---------------Curriculum------------------>
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-curriculum">
+            <h1>¿Quieres descargar mi curriculum?</h1>
+            <button class="btn">
+                <a href="./descarga/PanificacionPanesPotes.pdf">Mi curriculum</a>
+            </button>
+        </div>
+    </section>
+
+    <!---------------Proyectos---------------->
+
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-misProyectos">
+
+            <h2>Mis proyectos</h2>
+            <ul>
+                <li><a href="https://angu-piano.netlify.app"><img src="./imagenes/piano.jpg" alt=""></a>
+
+                </li>
+                <li><a href="https://angu-dados.netlify.app"><img src="./imagenes/dados.png" alt=""></a>
+
+                </li>
+                <li><a href="https://angu-tareas.netlify.app"><img src="./imagenes/tareas.png" alt=""></a>
+
+                </li>
+                <li><a href="https://angu-conversor.netlify.app"><img src="./imagenes/conversor.jpg" alt=""></a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!---------------Contacto---------------->
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-contacto">
+            <br>
+            <h2>Ahora que ya me conoces, puedes ponerte en contacto conmigo por cualquiera se estos medios</h2>
+            <ul>
+                <li><a href="https://twitter.com/Culoxo"><img src="./imagenes/twitter.png"></a></li>
+                <li><a href=""><img src="./imagenes/facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/culoxo/"><img src="./imagenes/instagram.png"></a></li>
+                <li><a href="mailto:culoxo@hotmail.com?Subject=Interesado%20en%20fijar%20una%20reunión"><img
+                            src="./imagenes/email2.png"></a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="myscript.js"></script>
+</body>
+
+</html>
